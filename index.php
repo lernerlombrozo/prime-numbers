@@ -11,18 +11,16 @@
 </head>
 
 <body>
+    <h2 id="method"></h2>
     <button id="eratosthenes">Sieve of eratosthenes</button>
     <button id="brute">Brute force</button>
-    <button id="frontend">Front end</button>
-    <button id="backend">Back end</button>
-    <form action="src/sieve-of-eratosthenes.php" method="post">
-        <p>Max: <input type="number" name="max" /></p>
-        <p><input type="submit" /></p>
+    <form id="form" action="src/sieve-of-eratosthenes.php" method="post">
+        <p>Max: <input type="number" name="max" id="max-input" /></p>
+        <button type="button" id="frontend">Run in front end (JS)</button>
+        <button type="submit">Run in backend (PHP)</button>
     </form>
-    <form action="src/brute-force.php" method="post">
-        <p>Max: <input type="number" name="max" /></p>
-        <p><input type="submit" /></p>
-    </form>
+    <ul id="primes"></ul>
+    <h2 id="time-count"></h2>
 </body>
 
 </html>
